@@ -1,0 +1,99 @@
+body{
+  background-color: #434756;
+}
+
+#one{
+  height: 10px;
+  width: 50px;
+  background-color: cyan;
+  transform: rotate(27deg);
+  animation-name: fall;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#two{
+  height: 10px;
+  width: 50px;
+  // background-color: cyan;
+  transform: rotate(28deg);
+  margin-top: 20px;
+  animation-name: fall2;
+  animation-delay: 4.5s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#three{
+  height: 10px;
+  width: 50px;
+  // background-color: cyan;
+  transform: rotate(29deg);
+  margin-top: 20px;
+  animation-name: fall3;
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes fall{
+  0%{
+    width: 0px;
+    
+  }
+  50%{
+    width: 50px;
+    border-radius: 10px;
+    
+  }
+  100%{
+    width:0px;
+    border-radius: 20px;
+    height: 4px;
+    transform: rotate(27deg) translatex(500px) translatey(10px);
+  }
+}
+
+
+
+@keyframes fall2{
+  0%{
+    background-color: cyan;
+    width: 0px;
+    
+  }
+  50%{
+    width: 50px;
+    border-radius: 10px;
+    
+  }
+  100%{
+    width:0px;
+    border-radius: 20px;
+    height: 4px;
+    transform: rotate(28deg) translatex(400px) translatey(100px);
+  }
+}
+
+@keyframes fall3{
+  0%{
+    width: 0px;
+    
+  }
+  50%{
+    width: 50px;
+    background-color: cyan;
+    border-radius: 10px;
+    
+  }
+  100%{
+    width:0px;
+    border-radius: 20px;
+    height: 4px;
+    transform: rotate(29deg) translatex(600px) translatey(150px);
+  }
+}
+
+
+
